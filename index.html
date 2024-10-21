@@ -15,37 +15,246 @@
   </head>
   <body class="p-0 m-0">
     <main>
-      <nav class="flex items-center justify-between">
-        <img src="images/logo-navbar.png" alt="logo-navbar" />
-        <div class="flex flex-col md:flex-row">
-          <box-icon
-            id="hamb-btn"
-            class="md:hidden absolute right-10 top-[56px]"
-            name="menu"
-          ></box-icon>
-          <div
-            id="navbar-items"
-            class="flex hidden md:flex-row md:top-0 md:right-0 md:translate-x-0 flex-col gap-5 items-center md:block absolute right-1/2 translate-x-1/2 top-[200px]"
-          >
-            <h2
-              class="text-main-purple text-[20px] underline-offset-4 underline"
+      <nav class="flex md:justify-center">
+        <div
+          class="flex items-center xl:w-[1562px] justify-between xl:ps-[134px] xl:pr-[195px]"
+        >
+          <img src="images/logo-navbar.png" alt="logo-navbar" />
+          <div class="flex flex-col md:flex-row">
+            <box-icon
+              id="hamb-btn"
+              class="md:hidden absolute right-10 top-[56px]"
+              name="menu"
+            ></box-icon>
+            <div
+              id="navbar-items"
+              class="flex md:flex-row md:top-0 md:static md:translate-x-0 flex-col gap-5 lg:gap-[48px] items-center absolute right-1/2 translate-x-1/2 top-[150px] hidden md:flex"
             >
-              Our Solution
-            </h2>
-            <h2 class="text-black text-[20px] font-medium">Contact Us</h2>
-            <button
-              class="text-[16px] text-main-purple font-medium border-main-purple border-[1px] rounded-[8px] w-[95px] h-[52px]"
-            >
-              Log in
-            </button>
-            <button
-              class="bg-main-purple text-white rounded-[8px] font-medium text-[16px] w-[165px] h-[52px]"
-            >
-              Learn More
-            </button>
+              <h2
+                class="text-main-purple text-[20px] underline-offset-4 underline"
+              >
+                Our Solution
+              </h2>
+              <h2 class="text-black text-[20px] font-medium">Contact Us</h2>
+              <button
+                class="text-[16px] text-main-purple font-medium border-main-purple border-[1px] rounded-[8px] w-[165px] md:w-[95px] h-[52px]"
+              >
+                Log in
+              </button>
+              <button
+                class="bg-main-purple text-white rounded-[8px] font-medium text-[16px] w-[165px] h-[52px]"
+              >
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </nav>
+
+      <!-- Content -->
+
+      <section
+        class="bg-gradient-to-r overflow-hidden w-full md:flex lg:h-[1019px] from-[#F2F2F6] via-[#ECECEC] to-[#ECECEC]"
+      >
+        <div
+          class="px-5 pb-14 lg:ms-[232px] lg:w-[1643px] z-10 md:pt-[146px] pt-10 overflow-hidden"
+        >
+          <h1
+            class="text-[82px] max-w-[747.24px] font-bold leading-tight tracking-[-2%]"
+          >
+            Building
+            <span class="text-secondary-purple">Smarter</span> Companies
+          </h1>
+          <p
+            class="text-[32px] max-w-[747.24px] mt-[24px] text-secondary-black font-normal leading-[150%]"
+          >
+            EVA Pro is the enterprise LMS designed to
+            <br class="hidden md:block" />
+            support even the most demanding training
+            <br class="hidden md:block" />
+            programs, offering one platform for
+            <span class="text-secondary-purple">limitless</span>
+            <br class="hidden md:block" />
+            learning.
+          </p>
+          <button
+            class="bg-main-purple mt-[34px] text-white rounded-[8px] font-medium text-[20px] w-[265px] h-[58px]"
+          >
+            Learn More
+          </button>
+        </div>
+        <img
+          class="border -translate-x-14 xl:absolute xl:object-contain xl:translate-x-72 z-0 lg:h-[1019px]"
+          src="images/nobg-hero-laptop.png"
+          alt="hero-laptop"
+        />
+      </section>
+
+      <!-- How does Eva Work?  -->
+
+      <section class="md:pt-[126px] pt-20 px-5 flex flex-col items-center">
+        <h1
+          class="text-[64px] font-bold tracking-[-2%] leading-tight text-center"
+        >
+          How does EVA work?
+        </h1>
+        <p
+          class="max-w-[828px] mt-[59px] text-[24px] text-secondary-black font-normal leading-[150%] text-center"
+        >
+          Creating custom
+          <span class="font-semibold">Training Courses</span> and
+          <span class="font-semibold">Standard Operating Procedures</span> has
+          never been easier. By simply telling EVA what you’d like your team to
+          learn, or uploading your own documentation, EVA generates high quality
+          training courses <span class="font-semibold">in minutes</span>,
+          specifically tailored to your company. <br />
+          <br />
+          Instead of hiring someone to do this manually, which takes weeks, let
+          EVA do it for you - in minutes. <br />
+          <br />
+          Maximize your teams potential, adherence to company policies, and
+          compliance through organizations like OSHA with EVA.
+        </p>
+
+        <!-- Team   -->
+
+        <h1
+          class="text-[64px] font-bold tracking-[-2%] leading-tight text-center mt-[79px] mb-[61px]"
+        >
+          Meet our team
+        </h1>
+        <div class="flex flex-col gap-[32px] lg:gap-[48px] md:mb-[146px] mb-20">
+          <div class="flex flex-col gap-[32px] lg:flex-row">
+            <div class="flex flex-col items-center">
+              <img src="images/people1.png" alt="ethan-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Ethan Sibio
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Chief Executive Officer
+              </h3>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/people2.png" alt="nick-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Nick Fay
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Chief Operating Officer
+              </h3>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/people3.png" alt="steve-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Steve Zampano
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Chief Financial Officer
+              </h3>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/people4.png" alt="artur-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Artur Mamedov
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Chief Technology Officer
+              </h3>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[32px] lg:flex-row">
+            <div class="flex flex-col items-center">
+              <img src="images/people5.png" alt="Joseph-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Joseph Deluxe
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Chief Growth Officer
+              </h3>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/people6.png" alt="Reese-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Reese Paine
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Media Editor
+              </h3>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/people7.png" alt="Katiee-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Katiee Fontini
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Social Media Manager
+              </h3>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/people8.png" alt="Scott-img" />
+              <h2
+                class="text-[24px] text-black font-bold leading-[123%] mt-[24px] mb-[8px]"
+              >
+                Scott Sterling
+              </h2>
+              <h3
+                class="text-[16px] font-medium leading-[150%] tracking-[0.2px]"
+              >
+                Goal Keeper
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Laptop Image -->
+
+      <section>
+        <img src="images/2hero-black-laptop.png" alt="black=laptop" />
+      </section>
+
+      <!-- Join us -->
+
+      <section class="flex flex-col items-center pt-[71px] pb-[101px] px-5">
+        <h1
+          class="md:text-[64px] text-[54px] font-bold tracking-[-2%] leading-tight text-center"
+        >
+          Join us in changing learning, forever.
+        </h1>
+        <button
+          class="bg-main-purple mt-[53px] text-white rounded-[8px] font-medium text-[20px] w-[265px] h-[58px]"
+        >
+          Learn More
+        </button>
+      </section>
     </main>
     <script src="javascript/navbar.js"></script>
   </body>
