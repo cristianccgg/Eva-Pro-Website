@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body class="p-0 m-0">
-    <main>
+    <main class="max-w-[1920px] mx-auto">
       <nav class="flex md:justify-center">
         <div
           class="flex items-center xl:w-[1562px] justify-between xl:ps-[134px] xl:pr-[195px]"
@@ -28,7 +28,7 @@
             ></box-icon>
             <div
               id="navbar-items"
-              class="flex md:flex-row md:top-0 md:static md:translate-x-0 flex-col gap-5 lg:gap-[48px] items-center absolute right-1/2 translate-x-1/2 top-[150px] hidden md:flex"
+              class="bg-white w-full flex md:flex-row md:top-0 md:static md:translate-x-0 flex-col gap-5 lg:gap-[48px] items-center absolute right-1/2 translate-x-1/2 top-[150px] hidden md:flex"
             >
               <h2
                 class="text-main-purple text-[20px] underline-offset-4 underline"
@@ -42,7 +42,7 @@
                 Log in
               </button>
               <button
-                class="bg-main-purple text-white rounded-[8px] font-medium text-[16px] w-[165px] h-[52px]"
+                class="bg-main-purple mb-8 md:mb-0 text-white rounded-[8px] font-medium text-[16px] w-[165px] h-[52px]"
               >
                 Learn More
               </button>
@@ -58,7 +58,7 @@
           class="px-5 pb-14 lg:ms-[232px] lg:w-[1643px] z-10 md:pt-[146px] pt-10"
         >
           <h1
-            class="text-[82px] max-w-[747.24px] font-bold leading-tight -tracking--2"
+            class="md:text-[82px] text-6xl max-w-[747.24px] font-bold leading-tight -tracking--2"
           >
             Building
             <span class="text-secondary-purple">Smarter</span> Companies
@@ -95,7 +95,7 @@
 
       <section class="md:pt-[126px] pt-20 px-5 flex flex-col items-center">
         <h1
-          class="text-[64px] font-bold tracking-[-2%] leading-tight text-center"
+          class="md:text-[64px] text-6xl font-bold tracking-[-2%] leading-tight text-center"
         >
           How does EVA work?
         </h1>
@@ -120,18 +120,20 @@
         <!-- Team   -->
 
         <h1
-          class="text-[64px] font-bold tracking-[-2%] leading-tight text-center mt-[79px] mb-[61px]"
+          class="md:text-[64px] text-6xl font-bold tracking-[-2%] leading-tight text-center mt-[79px] mb-[61px]"
         >
           Meet our team
         </h1>
-        <div class="flex flex-col gap-[32px] lg:gap-[48px] md:mb-[146px] mb-20">
+        <div
+          class="flex flex-col gap-[32px] lg:gap-[48px] md:mb-[146px] mb-20 relative"
+        >
           <img
-            class="hidden xl:block w-[336px] h-[550.76px] object-contain absolute 2xl:right-[250px] xl:right-0 top-[1740px] -z-10"
+            class="hidden xl:block w-[336px] h-[550.76px] object-contain absolute -right-28 -top-72 -z-10"
             src="images/Vector 1.png"
             alt="vector1"
           />
           <img
-            class="hidden xl:block h-[500px] absolute object-contain xl:left-[0px] top-[2630px] -z-10"
+            class="hidden xl:block h-[500px] absolute object-contain -left-96 -bottom-80 -z-10"
             src="images/Vector 49.png"
             alt="vector2"
           />
@@ -255,15 +257,15 @@
       <!-- Join us -->
 
       <section
-        class="flex flex-col items-center pt-[71px] pb-[101px] px-5 relative"
+        class="flex flex-col items-center pt-[71px] pb-[83px] px-5 relative"
       >
         <img
-          class="absolute 2xl:right-[395px] xl:right-32 -bottom-64 hidden xl:block"
+          class="absolute h-[400px] 2xl:right-[430px] -z-10 xl:right-32 -bottom-60 hidden xl:block"
           src="images/Vector 50.png"
           alt="vector3"
         />
         <h1
-          class="md:text-[64px] text-[54px] font-bold tracking-[-2%] leading-tight text-center lg:max-w-[628px]"
+          class="md:text-[64px] text-6xl font-bold tracking-[-2%] leading-tight text-center lg:max-w-[628px]"
         >
           Join us in changing learning, forever.
         </h1>
@@ -273,7 +275,83 @@
           Learn More
         </button>
       </section>
-      <footer></footer>
+
+      <!-- Footer -->
+
+      <footer
+        class="px-5 md:p-0 lg:flex bg-white max-w-[1308px] mx-auto lg:pb-[22px]"
+      >
+        <div
+          class="flex flex-col gap-[24px] lg:order-2 lg:pt-[48px] lg:ms-[35px]"
+        >
+          <h2 class="text-main-purple text-[20px] underline-offset-4 underline">
+            Our Solution
+          </h2>
+          <h2 class="text-black text-[20px] font-medium">Contact Us</h2>
+        </div>
+        <div class="mt-[26px] lg:order-4 lg:ms-[65px]">
+          <h2 class="mb-[24px] text-black text-[16px] font-medium">
+            Join our journey
+          </h2>
+          <h2
+            class="mb-[12px] text-secondary-black text-[16px] font-medium max-w-[327px]"
+          >
+            Subscribe to our newsletter to stay up to date with what we’re doing
+            for humankind.
+          </h2>
+          <form action="">
+            <input
+              class="max-w-[327px] w-[250px] h-[62px] md:me-[16px] text-[20px] text-light-gray font-medium border border-black rounded-[8px] p-[16px] placeholder:text-[16px] placeholder:text-light-gray"
+              placeholder="Email"
+              type="email"
+            />
+            <button
+              type="submit"
+              class="bg-main-purple text-white rounded-[8px] font-medium px-2 md:px-0 text-[16px] md:text-[20px] lg:w-[124px] h-[62px]"
+            >
+              Submit
+            </button>
+            <div class="flex gap-[8px] mt-[6px]">
+              <img src="images/Footer/facebook-icon.png" alt="facebook-icon" />
+              <img
+                class="object-contain"
+                src="images/Footer/linkedin-icon.png"
+                alt="linkedin-icon"
+              />
+              <img src="images/Footer/youtube-icon.png" alt="youtube-icon" />
+              <img
+                src="images/Footer/instagram-icon.png"
+                alt="instagram-icon"
+              />
+            </div>
+          </form>
+        </div>
+        <div
+          class="text-light-gray flex flex-col gap-[24px] mt-8 lg:mt-0 lg:order-3 lg:ms-[129px] lg:pt-[48px]"
+        >
+          <h2>Privacy Policy</h2>
+          <h2>Terms of Use</h2>
+          <h2>Disclaimer</h2>
+          <h2>Acceptable Use Policy</h2>
+        </div>
+        <div class="flex flex-col items-start -ms-10 lg:-ms-0 mb-5">
+          <img
+            class="object-contain -mb-5 lg:-mb-7"
+            src="images/Footer/logo-footer.png"
+            alt="logo-footer"
+          />
+          <img
+            class="object-contain -translate-x-1"
+            src="images/Footer/automateHQ-logo.png"
+            alt="automateHQ-logo"
+          />
+          <h3
+            class="text-[11px] font-normal text-secondary-black lg:ms-12 lg:mt-[15px]"
+          >
+            2024 @ EVA Pro - All Rights Reserved
+          </h3>
+        </div>
+      </footer>
     </main>
     <script src="javascript/navbar.js"></script>
   </body>
