@@ -5,3 +5,39 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.gray-bg {
+  background: linear-gradient(
+    to right,
+    rgba(236, 236, 236, 0) 100%,
+    rgba(242, 242, 246, 1) 0%
+  ) !important;
+}
+
+.hero-bg {
+  background: linear-gradient(
+    rgba(242, 242, 246, 1) 100%,
+    rgba(236, 236, 236, 1) 0%
+  );
+}
+
+.image-container {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.gradient-overlay {
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(242, 242, 246, 0.7) 0%,
+    rgba(236, 236, 236, 0.08) 50%
+  );
+  pointer-events: none;
+}
