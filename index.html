@@ -17,7 +17,7 @@
     <main class="max-w-[1920px] mx-auto">
       <nav class="flex md:justify-center">
         <div
-          class="flex items-center 2xl:w-[1562px] justify-between xl:ps-[134px] xl:pr-[145px]"
+          class="flex items-center lg:w-[1562px] justify-between lg:px-28 xl:ps-[134px] xl:pr-[145px]"
         >
           <a href="/index.html"
             ><img src="images/logo-navbar.png" alt="logo-navbar"
@@ -30,7 +30,7 @@
             ></box-icon>
             <div
               id="navbar-items"
-              class="bg-white w-full flex md:flex-row md:top-0 md:static md:translate-x-0 flex-col gap-5 lg:gap-[48px] items-center absolute right-1/2 translate-x-1/2 top-[150px] hidden md:flex"
+              class="bg-white z-20 w-full flex md:flex-row md:top-0 md:static md:translate-x-0 flex-col gap-5 lg:gap-[48px] items-center absolute right-1/2 translate-x-1/2 top-[150px] hidden md:flex"
             >
               <h2
                 class="text-main-purple text-[20px] underline-offset-4 underline"
@@ -58,9 +58,9 @@
 
       <!-- Content -->
 
-      <section class="overflow-hidden w-full xl:flex xl:h-[1019px] hero-bg">
+      <section class="overflow-hidden w-full flex flex-col items-center xl:items-stretch xl:flex-row  xl:h-[1019px] hero-bg ">
         <div
-          class="px-5 pb-14 lg:ms-[232px] lg:w-[1643px] z-10 md:pt-[146px] pt-10"
+          class="px-5 pb-14 xl:ms-[132px] 2xl:ms-[232px] 3xl:w-[1643px] z-10 md:pt-[146px] pt-10 "
         >
           <h1
             class="md:text-[82px] text-6xl max-w-[747.24px] font-bold leading-tight -tracking--2"
@@ -89,7 +89,7 @@
         </div>
         <div class="image-container w-full h-full relative xl:-translate-x-36">
           <img
-            class="object-fill w-full h-full"
+            class="object-contain w-[80%] lg:w-full h-full translate-x-16 lg:translate-x-0"
             src="images/nobg-hero-laptop.png"
             alt="hero-laptop"
           />
@@ -99,7 +99,7 @@
 
       <!-- How does Eva Work?  -->
 
-      <section class="md:pt-[126px] pt-20 px-5 flex flex-col items-center">
+      <section class="md:pt-[126px] pt-20 px-5 flex flex-col items-center overflow-hidden">
         <h1
           class="md:text-[64px] text-6xl font-bold tracking-[-2%] leading-tight text-center"
         >
@@ -283,9 +283,136 @@
         </a>
       </section>
 
-      <div id="footer-placeholder"></div>
+      <footer
+        class="px-5 lg:p-0 lg:flex bg-white max-w-[1308px] mx-auto lg:pb-[22px]"
+      >
+        <div
+          class="flex flex-col gap-[24px] lg:order-2 lg:pt-[48px] lg:ms-[35px]"
+        >
+          <a href="/index.html">
+            <h2
+            class="text-main-purple text-[16px] underline-offset-4 underline text-nowrap"
+          >
+              Our Solution
+            </h2>
+          </a>
+          <a href="/form.html">
+            
+            <h2 class="text-black text-[16px] font-medium text-nowrap"></h2>
+              Contact Us
+            </h2>
+          </a>
+        </div>
+        <div class="mt-[26px] lg:order-4 lg:ms-[65px]">
+          <h2 class="mb-[24px] text-black text-[16px] font-medium">
+            Join our journey
+          </h2>
+          <h2
+            class="mb-[12px] text-secondary-black text-[16px] font-medium max-w-[327px]"
+          >
+            Subscribe to our newsletter to stay up to date with what we’re doing
+            for humankind.
+          </h2>
+
+          <form id="newsletter-form">
+            <div class="md:flex-nowrap flex">
+              <input
+                class="md:w-[327px] w-[250px] h-[62px] md:me-[16px] text-[20px] text-light-gray font-medium border border-[#E0E0E0] rounded-[8px] px-[16px] placeholder:text-[20px] placeholder:text-light-gray"
+                placeholder="Email"
+                type="email"
+                name="email"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-main-purple text-white rounded-[8px] font-medium px-2 lg:px-0 text-[16px] lg:text-[20px] lg:w-[124px] h-[62px]"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+
+          <div class="flex gap-[8px] mt-[6px]">
+            <a
+              href="https://web.facebook.com/Automatehq.inc?_rdc=1&_rdr"
+              target="_blank"
+            >
+              <img src="images/Footer/facebook-icon.png" alt="facebook-icon" />
+            </a>
+
+            <a
+              class="object-contain flex align-middle"
+              href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH07R2rMraIqgAAAZK7vUtwxjmIsW2Nh5Fp6uKgTaJHHfToAkcBQBflWU7aSd7Aeb5aALq4u_kgvsT5t2f7uioC6AvsM7XztwNIXyvrGwH4FEblSJrDliI178Ihw9ZToDuGJfc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fautomate-hq"
+              target="_blank"
+            >
+              <img
+                class="object-contain block"
+                src="images/Footer/linkedin-icon.png"
+                alt="linkedin-icon"
+              />
+            </a>
+
+            <a
+              href="https://x.com/automate_hq?s=21&t=pTkB4z6slFqDPN6TxYN3tA"
+              target="_blank"
+            >
+              <img src="images/Footer/youtube-icon.png" alt="youtube-icon" />
+            </a>
+
+            <a href="https://www.instagram.com/automatehq.ai/" target="_blank">
+              <img
+                src="images/Footer/instagram-icon.png"
+                alt="instagram-icon"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="text-light-gray flex flex-col gap-[24px] mt-8 lg:mt-0 lg:order-3 lg:ms-[129px] lg:pt-[48px]"
+        >
+          <a href="/privacy.html">
+            <h2>Privacy Policy</h2>
+          </a>
+          <a href="/terms.html">
+            <h2>Terms of Use</h2>
+          </a>
+          <a href="/disclaimer.html">
+            <h2>Disclaimer</h2>
+          </a>
+          <a href="/acceptable.html">
+            <h2>Acceptable Use Policy</h2>
+          </a>
+        </div>
+        <div class="flex flex-col items-start -ms-10 lg:-ms-0 mb-5">
+          <a href="/index.html">
+            <img
+              class="object-contain -mb-5 lg:-mb-7"
+              src="images/Footer/logo-footer.png"
+              alt="logo-footer"
+            />
+          </a>
+          <a href="https://www.automatehq.ai/" target="_blank">
+            <img
+              class="object-contain -translate-x-1"
+              src="images/Footer/automateHQ-logo.png"
+              alt="automateHQ-logo"
+            />
+          </a>
+          <h3
+            class="text-[11px] ms-12 font-normal text-secondary-black xl:ms-12 lg:mt-[15px]"
+          >
+            2024 @ EVA Pro - All Rights Reserved
+          </h3>
+        </div>
+      </footer>
     </main>
     <script src="javascript/navbar.js"></script>
-    <script src="/javascript/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("f9pElmO206g1b6Acq");
+      })();
+    </script>
+    <script src="javascript/form.js"></script>
   </body>
 </html>

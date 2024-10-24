@@ -17,7 +17,7 @@
     <main>
       <nav class="flex md:justify-center">
         <div
-          class="flex items-center 2xl:w-[1562px] justify-between xl:ps-[134px] xl:pr-[145px]"
+          class="flex items-center lg:w-[1562px] justify-between lg:px-28 xl:ps-[134px] xl:pr-[145px]"
         >
           <a href="/index.html"
             ><img src="images/logo-navbar.png" alt="logo-navbar"
@@ -58,12 +58,12 @@
         </div>
       </nav>
 
-      <section class="mt-[72px]">
+      <section class="mt-[72px] px-5 md:px-10 2xl:px-0">
         <div
-          class="flex cursor-pointer mb-[93px] gap-[11px] justify-between text-[48px] text-light-gray max-w-[1464px] mx-auto"
+          class="flex flex-col md:flex-row cursor-pointer mb-[93px] gap-[11px] justify-between items-start text-[30px] md:text-[20px] lg:text-[30px] xl:text-[40px] 2xl:text-[48px] text-light-gray max-w-[1464px] mx-auto"
         >
           <a href="/privacy.html">
-            <h1>Privacy Policy</h1>
+            <h1><span class="md:hidden">|</span> Privacy Policy</h1>
           </a>
           <a href="/terms.html">
             <h1>| Terms of Use</h1>
@@ -77,9 +77,9 @@
         </div>
       </section>
 
-      <section class="mb-[361px]">
+      <section class="xl:mb-[361px] mb-28 px-5 md:px-10 2xl:px-0">
         <div
-          class="max-w-[1464px] mx-auto text-[32px] font-normal leading-150 tracking-wider"
+          class="max-w-[1464px] mx-auto md:text-[20px] lg:text-[32px] font-normal leading-150 tracking-wide"
         >
           <h2>
             <span class="font-bold">Disclaimer for EVA Pro</span> <br /><br />
@@ -177,9 +177,135 @@
 
       <!-- Footer -->
 
-      <div id="footer-placeholder"></div>
+      <footer
+        class="px-5 lg:p-0 lg:flex bg-white max-w-[1308px] mx-auto lg:pb-[22px]"
+      >
+        <div
+          class="flex flex-col gap-[24px] lg:order-2 lg:pt-[48px] lg:ms-[35px]"
+        >
+          <a href="/index.html">
+            <h2 class="text-black text-[16px] font-medium text-nowrap">
+              Our Solution
+            </h2>
+          </a>
+          <a href="/form.html">
+            <h2
+              class="text-main-purple text-[16px] underline-offset-4 underline text-nowrap"
+            >
+              Contact Us
+            </h2>
+          </a>
+        </div>
+        <div class="mt-[26px] lg:order-4 lg:ms-[65px]">
+          <h2 class="mb-[24px] text-black text-[16px] font-medium">
+            Join our journey
+          </h2>
+          <h2
+            class="mb-[12px] text-secondary-black text-[16px] font-medium max-w-[327px]"
+          >
+            Subscribe to our newsletter to stay up to date with what we’re doing
+            for humankind.
+          </h2>
+
+          <form id="newsletter-form">
+            <div class="md:flex-nowrap flex">
+              <input
+                class="md:w-[327px] w-[250px] h-[62px] md:me-[16px] text-[20px] text-light-gray font-medium border border-black rounded-[8px] px-[16px] placeholder:text-[20px] placeholder:text-light-gray"
+                placeholder="Email"
+                type="email"
+                name="email"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-main-purple text-white rounded-[8px] font-medium px-2 lg:px-0 text-[16px] lg:text-[20px] lg:w-[124px] h-[62px]"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+
+          <div class="flex gap-[8px] mt-[6px]">
+            <a
+              href="https://web.facebook.com/Automatehq.inc?_rdc=1&_rdr"
+              target="_blank"
+            >
+              <img src="images/Footer/facebook-icon.png" alt="facebook-icon" />
+            </a>
+
+            <a
+              class="object-contain flex align-middle"
+              href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH07R2rMraIqgAAAZK7vUtwxjmIsW2Nh5Fp6uKgTaJHHfToAkcBQBflWU7aSd7Aeb5aALq4u_kgvsT5t2f7uioC6AvsM7XztwNIXyvrGwH4FEblSJrDliI178Ihw9ZToDuGJfc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fautomate-hq"
+              target="_blank"
+            >
+              <img
+                class="object-contain block"
+                src="images/Footer/linkedin-icon.png"
+                alt="linkedin-icon"
+              />
+            </a>
+
+            <a
+              href="https://x.com/automate_hq?s=21&t=pTkB4z6slFqDPN6TxYN3tA"
+              target="_blank"
+            >
+              <img src="images/Footer/youtube-icon.png" alt="youtube-icon" />
+            </a>
+
+            <a href="https://www.instagram.com/automatehq.ai/" target="_blank">
+              <img
+                src="images/Footer/instagram-icon.png"
+                alt="instagram-icon"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="text-light-gray flex flex-col gap-[24px] mt-8 lg:mt-0 lg:order-3 lg:ms-[129px] lg:pt-[48px]"
+        >
+          <a href="/privacy.html">
+            <h2>Privacy Policy</h2>
+          </a>
+          <a href="/terms.html">
+            <h2>Terms of Use</h2>
+          </a>
+          <a href="/disclaimer.html">
+            <h2>Disclaimer</h2>
+          </a>
+          <a href="/acceptable.html">
+            <h2>Acceptable Use Policy</h2>
+          </a>
+        </div>
+        <div class="flex flex-col items-start -ms-10 lg:-ms-0 mb-5">
+          <a href="/index.html">
+            <img
+              class="object-contain -mb-5 lg:-mb-7"
+              src="images/Footer/logo-footer.png"
+              alt="logo-footer"
+            />
+          </a>
+          <a href="https://www.automatehq.ai/" target="_blank">
+            <img
+              class="object-contain -translate-x-1"
+              src="images/Footer/automateHQ-logo.png"
+              alt="automateHQ-logo"
+            />
+          </a>
+          <h3
+            class="text-[11px] font-normal text-secondary-black lg:ms-12 lg:mt-[15px]"
+          >
+            2024 @ EVA Pro - All Rights Reserved
+          </h3>
+        </div>
+      </footer>
     </main>
     <script src="javascript/navbar.js"></script>
-    <script src="/javascript/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("f9pElmO206g1b6Acq");
+      })();
+    </script>
+    <script src="javascript/form.js"></script>
   </body>
 </html>
