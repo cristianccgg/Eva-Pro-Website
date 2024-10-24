@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main>
+      <nav class="flex md:justify-center">
+        <div
+          class="flex items-center 2xl:w-[1562px] justify-between xl:ps-[134px] xl:pr-[145px]"
+        >
+          <a href="/index.html"
+            ><img src="images/logo-navbar.png" alt="logo-navbar"
+          /></a>
+          <div class="flex flex-col md:flex-row">
+            <box-icon
+              id="hamb-btn"
+              class="md:hidden absolute right-10 top-[56px] scale-[180%]"
+              name="menu"
+            ></box-icon>
+            <div
+              id="navbar-items"
+              class="bg-white w-full flex md:flex-row md:top-0 md:static md:translate-x-0 flex-col gap-5 lg:gap-[48px] items-center absolute right-1/2 translate-x-1/2 top-[150px] hidden md:flex"
+            >
+              <a href="/index.html">
+                <h2 class="text-black text-[20px] font-medium">Our Solution</h2>
+              </a>
+              <a href="/form.html">
+                <h2
+                  class="text-main-purple text-[20px] underline-offset-4 underline"
+                >
+                  Contact Us
+                </h2>
+              </a>
+              <button
+                class="text-[16px] text-main-purple font-medium border-main-purple border-[1px] rounded-[8px] w-[165px] md:w-[95px] h-[52px]"
+              >
+                Log in
+              </button>
+              <a
+                href="/form.html"
+                class="bg-main-purple mb-8 md:mb-0 text-white rounded-[8px] font-medium text-[16px] w-[165px] h-[52px] flex items-center justify-center"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section
+        class="bg-gradient-to-r flex flex-col items-center pt-8 md:pt-[90px] md:pb-[145px] pb-8 px-5 from-[rgba(153,104,255,0)] from-0% via-[rgba(160,36,170,0.08)] via-50% to-[rgba(153,104,255,0)] to-100%"
+      >
+        <h1
+          class="font-bold md:text-[64px] text-5xl text-black mb-[24px] text-center"
+        >
+          Interested in EVA Pro?
+        </h1>
+        <p
+          class="font-normal text-[24px] text-secondary-black mb-[36px] max-w-[747.24px] text-center"
+        >
+          Please enter the following information to have an EVA Pro Advisor
+          reach out to you.
+        </p>
+        <form class="md:w-[400px] w-full flex flex-col gap-[16px]" action="">
+          <input
+            class="w-full h-[40px] border border-light-gray text-[16px] rounded-[8px] py-[8px] px-[16px] placeholder:text-light-gray"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+          />
+          <input
+            class="w-full h-[40px] border border-light-gray text-[16px] rounded-[8px] py-[8px] px-[16px] placeholder:text-light-gray"
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+          />
+          <input
+            class="w-full h-[40px] border border-light-gray text-[16px] rounded-[8px] py-[8px] px-[16px] placeholder:text-light-gray"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <button
+            type="submit"
+            class="bg-main-purple text-white rounded-[8px] font-medium px-2 md:px-0 text-[16px] w-full h-[40px]"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+
+      <div id="footer-placeholder"></div>
+    </main>
+    <script src="javascript/navbar.js"></script>
+    <script src="/javascript/footer.js"></script>
+  </body>
+</html>
